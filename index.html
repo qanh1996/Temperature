@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperatura {
+        constructor(C) {
+            this.C=C;
+        }
+        getC(){
+            return this.C
+        }
+        setC(){
+            this.C=C
+        }
+        CtoF(){
+            document.write('do F'+(9/5*this.C)+parseInt(32)+"<br>");
+
+        }
+        CtoKevin(){
+            document.write('do K'+this.C+parseFloat(273.15));
+        }
+    }
+    let c = parseInt(prompt('nhap C'))
+    let a = new Temperatura(c);
+    a.CtoF();
+    a.CtoKevin();
+</script>
+</body>
+</html>
